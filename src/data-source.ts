@@ -6,11 +6,11 @@ import { Tasks } from './entity/Tasks';
 
 const PostgresAppDataSource = new DataSource({
   type: 'postgres',
-  host: 'dpg-cpl7ac8cmk4c739ivt1g-a.oregon-postgres.render.com',
+  host: 'dpg-cpltpviju9rs73fk4d5g-a.oregon-postgres.render.com',
   port: 5432,
-  username: 'tarefadb_sorh_user',
-  password: 'U3RRhFAtOTJwKcjjxNhUC8xwwjTqzqhE',
-  database: 'tarefadb_sorh',
+  username: 'tarefasdb_user',
+  password: '4gocQ3cwqc5jDpPvu6Bi0seXoQXwHFTR',
+  database: 'tarefasdb',
   synchronize: true,
   logging: true,
   entities: [User, Tasks],
@@ -22,7 +22,7 @@ const PostgresAppDataSource = new DataSource({
 
 const SqliteAppDataSource = new DataSource({
   type: 'sqlite',
-  database: 'tarefadb_sorh.sql',
+  database: 'tarefasdb.sql',
   synchronize: true,
   logging: true,
   entities: [User, Tasks],
